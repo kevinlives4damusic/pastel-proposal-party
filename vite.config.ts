@@ -5,8 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base for GitHub Pages project site (https://<user>.github.io/pastel-proposal-party/)
-  base: "/pastel-proposal-party/",
+  // Dynamic base: GitHub Pages vs. Netlify/anywhere else
+  // Set env GITHUB_PAGES=true when building for GH Pages
+  base: process.env.GITHUB_PAGES === "true" ? "/pastel-proposal-party/" : "/",
   server: {
     // Bind to all interfaces (IPv4/IPv6) for better Windows compatibility
     host: true,
