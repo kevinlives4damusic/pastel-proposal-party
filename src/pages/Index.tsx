@@ -30,8 +30,8 @@ const Index = () => {
             </CardHeader>
             <CardContent className="text-foreground/70">
               <ul className="list-disc pl-5 space-y-2">
-                <li>Unlimited hugs and snack deliveries</li>
-                <li>Priority meme sharing</li>
+                <li>Unlimited hugs</li>
+                <li>Unlimited funny tiktoks</li>
                 <li>Compliments on demand</li>
               </ul>
             </CardContent>
@@ -41,15 +41,7 @@ const Index = () => {
               <CardTitle className="font-display">Adventure Plan</CardTitle>
             </CardHeader>
             <CardContent className="text-foreground/70">
-              <p>First date ideas include: pastel ice-cream, a walk at sunset, and a photo session to add to this page.</p>
-            </CardContent>
-          </Card>
-          <Card className="glass animate-enter">
-            <CardHeader>
-              <CardTitle className="font-display">Contract (Cute)</CardTitle>
-            </CardHeader>
-            <CardContent className="text-foreground/70">
-              <p>Terms: laugh together often, steal hoodies, and press YES above. Breaking the rules results in extra cuddles.</p>
+              <p>First date idea includes a fresh pasta, warm hugs and more kisses.</p>
             </CardContent>
           </Card>
         </section>

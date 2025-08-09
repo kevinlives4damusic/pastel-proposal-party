@@ -78,7 +78,7 @@ const HeroProposal: React.FC<HeroProposalProps> = ({ onAccept }) => {
             Will you be my girlfriend?
           </h1>
           <p className="text-lg md:text-xl text-foreground/70 mt-4">
-            I bring snacks, memes, warm hoodies, and unlimited compliments.
+            I bring amasnack, twitter memes, warm hoodies, and unlimited compliments sthandwa sam
           </p>
         </div>
 
