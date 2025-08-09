@@ -9,19 +9,19 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 
 const photos = [
-  "/lovable-uploads/b0cb7af6-66d8-4e67-8198-a8c9511c3ba9.png",
-  "/lovable-uploads/fd6ba729-a2dc-4871-9751-3cf6911a8964.png",
-  "/lovable-uploads/6c6065bb-140a-45c2-8cb7-d5efcb716444.png",
+  new URL("/lovable-uploads/b0cb7af6-66d8-4e67-8198-a8c9511c3ba9.png", import.meta.url).pathname,
+  new URL("/lovable-uploads/fd6ba729-a2dc-4871-9751-3cf6911a8964.png", import.meta.url).pathname,
+  new URL("/lovable-uploads/6c6065bb-140a-45c2-8cb7-d5efcb716444.png", import.meta.url).pathname,
 ];
 
 const PhotoCarousel: React.FC = () => {
   return (
     <div className="w-full max-w-2xl mx-auto">
-      <Carousel className="w-full">
+      <Carousel className="w-full animate-enter">
         <CarouselContent>
           {photos.map((src, idx) => (
             <CarouselItem key={idx}>
-              <Card className="glass">
+              <Card className="hover-scale hover-glow">
                 <CardContent className="p-2 md:p-4">
                   <img
                     src={src}
@@ -34,8 +34,8 @@ const PhotoCarousel: React.FC = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-background/70 backdrop-blur-sm" aria-label="Previous" />
-        <CarouselNext className="bg-background/70 backdrop-blur-sm" aria-label="Next" />
+        <CarouselPrevious className="glass px-3 py-2" aria-label="Previous" />
+        <CarouselNext className="glass px-3 py-2" aria-label="Next" />
       </Carousel>
     </div>
   );

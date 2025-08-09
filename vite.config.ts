@@ -5,8 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Set base for GitHub Pages project site (https://<user>.github.io/pastel-proposal-party/)
+  base: "/pastel-proposal-party/",
   server: {
-    host: "::",
+    // Bind to all interfaces (IPv4/IPv6) for better Windows compatibility
+    host: true,
     port: 8080,
   },
   plugins: [

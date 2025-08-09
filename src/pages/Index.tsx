@@ -11,17 +11,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <header className="container py-6 md:py-8">
-        <nav className="flex items-center justify-between">
-          <a href="#" className="font-display text-xl">💕 Pastel Proposal</a>
-          <a href="#gallery" className="story-link text-sm">Gallery</a>
+      <header className="container py-4 md:py-6">
+        <nav className="flex items-center justify-end">
+          <a href="#gallery" className="story-link text-sm px-4 py-2 rounded-full glass hover-scale" aria-label="Skip to gallery">Gallery</a>
         </nav>
       </header>
 
       <main className="container space-y-12 md:space-y-16 pb-16">
 
         <section aria-labelledby="why-title" className="grid md:grid-cols-3 gap-6">
-          <Card className="glass animate-enter">
+          <Card className="animate-enter hover-scale hover-glow">
             <CardHeader>
               <CardTitle id="why-title" className="font-display">Perks</CardTitle>
             </CardHeader>
@@ -33,7 +32,7 @@ const Index = () => {
               </ul>
             </CardContent>
           </Card>
-          <Card className="glass animate-enter">
+          <Card className="animate-enter hover-scale hover-glow">
             <CardHeader>
               <CardTitle className="font-display">Adventure Plan</CardTitle>
             </CardHeader>

@@ -69,7 +69,7 @@ const HeroProposal: React.FC<HeroProposalProps> = ({ onAccept }) => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden rounded-2xl bg-gradient-love p-6 md:p-10 shadow-xl">
+    <section className="relative overflow-hidden rounded-2xl bg-gradient-love p-6 md:p-10 shadow-xl animate-enter">
       <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,hsl(var(--accent)/.35),transparent_60%)]" aria-hidden />
       <div className="relative z-10" ref={containerRef}>
         <div className="mx-auto max-w-3xl text-center">
@@ -84,7 +84,7 @@ const HeroProposal: React.FC<HeroProposalProps> = ({ onAccept }) => {
 
         <div className="relative mx-auto mt-8 md:mt-10 h-[180px] md:h-[220px]">
           <div className="flex items-center justify-center gap-4 md:gap-6 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
-            <Button variant="hero" size="lg" onClick={handleYes} className="hover-scale">
+            <Button variant="hero" size="lg" onClick={handleYes} className="hover-scale hover-glow">
               YES, obviously ✨
             </Button>
           </div>
@@ -94,7 +94,7 @@ const HeroProposal: React.FC<HeroProposalProps> = ({ onAccept }) => {
             size="lg"
             onMouseEnter={moveNo}
             onFocus={moveNo}
-            className="absolute"
+            className="absolute glass hover-scale"
             style={{ left: noPos.x, top: noPos.y }}
           >
             {dodges > 4 ? "Nice try 😜" : "No"}

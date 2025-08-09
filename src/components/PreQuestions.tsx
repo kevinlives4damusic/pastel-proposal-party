@@ -30,7 +30,7 @@ const PreQuestions: React.FC = () => {
 
   return (
     <div className="grid gap-6 md:grid-cols-2">
-      <Card className="glass animate-enter">
+      <Card className="animate-enter hover-scale hover-glow">
         <CardHeader>
           <CardTitle className="font-display">Talking stage rating</CardTitle>
         </CardHeader>
@@ -57,7 +57,7 @@ const PreQuestions: React.FC = () => {
         </CardContent>
       </Card>
 
-      <Card className="glass animate-enter">
+      <Card className="animate-enter hover-scale hover-glow">
         <CardHeader>
           <CardTitle className="font-display">Quick poll</CardTitle>
         </CardHeader>
