@@ -2,6 +2,7 @@ import React from "react";
 import FloatingHearts from "@/components/FloatingHearts";
 import HeroProposal from "@/components/HeroProposal";
 import PhotoCarousel from "@/components/PhotoCarousel";
+import PreQuestions from "@/components/PreQuestions";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
@@ -18,10 +19,6 @@ const Index = () => {
       </header>
 
       <main className="container space-y-12 md:space-y-16 pb-16">
-        <div className="relative">
-          <HeroProposal onAccept={() => setAccepted(true)} />
-          <FloatingHearts />
-        </div>
 
         <section aria-labelledby="why-title" className="grid md:grid-cols-3 gap-6">
           <Card className="glass animate-enter">
@@ -53,6 +50,16 @@ const Index = () => {
           <p className="text-foreground/60">A few lovely photos to set the vibe.</p>
           <PhotoCarousel />
         </section>
+
+        <section aria-labelledby="questions-title" className="space-y-4">
+          <h2 id="questions-title" className="font-display text-3xl">Warm-up Questions</h2>
+          <PreQuestions />
+        </section>
+
+        <div className="relative">
+          <HeroProposal onAccept={() => setAccepted(true)} />
+          <FloatingHearts />
+        </div>
 
         {accepted && (
           <section aria-labelledby="yay-title" className="animate-enter">
