@@ -8,98 +8,144 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Pastel palette */
+    --background: 300 40% 99%;
+    --foreground: 265 24% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 265 24% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 265 24% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Violet primary with good contrast */
+    --primary: 275 72% 56%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft pink secondary */
+    --secondary: 320 80% 96%;
+    --secondary-foreground: 275 40% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 285 40% 96%;
+    --muted-foreground: 270 12% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 290 60% 95%;
+    --accent-foreground: 275 40% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 280 30% 92%;
+    --input: 280 30% 92%;
+    --ring: 275 72% 56%;
 
-    --radius: 0.5rem;
+    --radius: 0.85rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Sidebar (unused today but themed) */
+    --sidebar-background: 300 40% 98%;
+    --sidebar-foreground: 265 14% 25%;
+    --sidebar-primary: 275 72% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 290 60% 96%;
+    --sidebar-accent-foreground: 265 14% 25%;
+    --sidebar-border: 280 30% 92%;
+    --sidebar-ring: 275 72% 56%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Extras */
+    --gradient-primary: linear-gradient(135deg,
+      hsl(320 90% 95%),
+      hsl(285 90% 92%),
+      hsl(265 85% 90%)
+    );
+    --shadow-elegant: 0 10px 30px -10px hsl(275 72% 56% / 0.20);
+    --shadow-glow: 0 0 40px hsl(275 72% 56% / 0.35);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 268 38% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 268 38% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 268 38% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 276 72% 62%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 300 25% 16%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 280 20% 18%;
+    --muted-foreground: 280 14% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 285 25% 20%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 280 20% 22%;
+    --input: 280 20% 22%;
+    --ring: 276 72% 62%;
+
+    --sidebar-background: 268 38% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 276 72% 62%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 285 25% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 285 20% 18%;
+    --sidebar-ring: 276 72% 62%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-body; }
 }
+
+/* Component utilities using design tokens */
+@layer components {
+  .bg-gradient-love { background-image: var(--gradient-primary); }
+  .glass {
+    backdrop-filter: saturate(180%) blur(14px);
+    background: hsl(var(--card) / 0.65);
+    box-shadow: var(--shadow-elegant);
+    border: 1px solid hsl(var(--border));
+  }
+  .btn-hero {
+    background-image: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-glow);
+    transition: var(--transition-smooth, all 0.3s ease);
+  }
+  .btn-hero:hover { transform: translateY(-1px); }
+  .btn-love { @apply bg-primary text-primary-foreground; box-shadow: var(--shadow-elegant); }
+  .btn-love:hover { filter: brightness(1.05); }
+
+  .story-link { position: relative; display: inline-block; }
+  .story-link::after {
+    content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+    background: hsl(var(--primary)); transform: scaleX(0); transform-origin: bottom right;
+    transition: transform .3s ease;
+  }
+  .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+}
+
+@keyframes float-up {
+  0% { transform: translateY(0) scale(0.95); opacity: 0.6; }
+  100% { transform: translateY(-100vh) scale(1.15); opacity: 0.0; }
+}
+
+.floating-hearts { pointer-events: none; }
+.floating-hearts span {
+  position: absolute;
+  bottom: -10vh;
+  color: hsl(var(--primary));
+  opacity: 0.5;
+  animation: float-up var(--duration, 8s) linear infinite;
+  filter: drop-shadow(0 2px 4px hsl(var(--primary) / 0.3));
+}
+.floating-hearts span:nth-child(odd) { color: hsl(var(--accent-foreground)); opacity: 0.35; }
